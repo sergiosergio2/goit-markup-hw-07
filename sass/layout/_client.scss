@@ -8,19 +8,18 @@
 .client-cell {
   margin-left: 30px;
   margin-top: 30px;
+
+    &:hover {
+     cursor: pointer;
+     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    }
 }
-.client-cell:hover {
-  cursor: pointer;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
+
 .client-link {
   display: block;
   text-decoration: none;
 }
-.client-link:hover .overlay,
-.client-link:focus .overlay {
-  transform: translateY(0%);
-}
+
 
 .client-img-overlay {
   position: relative;
@@ -49,6 +48,11 @@
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+     .client-link:hover &,
+     .client-link:focus & {
+        transform: translateY(0%);
+      }
 }
 .client-info {
   padding: 20px 24px;

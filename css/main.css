@@ -122,6 +122,14 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.menu-link:hover, .menu-link:focus {
+  color: var(--accent-color);
+}
+
+.menu-link-activ {
+  color: var(--accent-color);
+}
+
 .menu-link-activ::after {
   position: absolute;
   left: 0;
@@ -132,15 +140,6 @@ img {
   height: 4px;
   background-color: var(--accent-color);
   margin: 0 auto;
-}
-
-.menu-link-activ {
-  color: var(--accent-color);
-}
-
-.menu-link:hover,
-.menu-link:focus {
-  color: var(--accent-color);
 }
 
 .contakt {
@@ -169,24 +168,24 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.tel-link:hover,
-.tel-link:focus {
-  color: var(--accent-color);
-}
-
 .tel-link:hover .contakt-item-icon,
 .tel-link:focus .contakt-item-icon {
   fill: var(--accent-color);
 }
 
-.mailto-link:hover,
-.mailto-link:focus {
-  color: var(--accent-color);
-}
-
 .mailto-link:hover .contakt-item-icon,
 .mailto-link:focus .contakt-item-icon {
   fill: var(--accent-color);
+}
+
+.tel-link:hover,
+.tel-link:focus {
+  color: var(--accent-color);
+}
+
+.mailto-link:hover,
+.mailto-link:focus {
+  color: var(--accent-color);
 }
 
 .contakt .contakt-item + .contakt-item {
@@ -237,8 +236,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-btn:hover, .modal-btn:focus {
   cursor: pointer;
   background-color: #188ce8;
 }
@@ -262,6 +260,10 @@ img {
   background-color: #f5f4fa;
 }
 
+.advantages-icon-field:not(:last-child) {
+  margin-right: 30px;
+}
+
 .advantages-icon-pic {
   width: 70px;
   height: 70px;
@@ -272,12 +274,12 @@ img {
   justify-content: space-between;
 }
 
-.advantages-icon-field:not(:last-child) {
-  margin-right: 30px;
-}
-
 .advantages-block {
   width: 270px;
+}
+
+.advantages-block:not(:last-child) {
+  margin-right: 30px;
 }
 
 .advantages-list-title {
@@ -296,10 +298,6 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
-}
-
-.advantages-block:not(:last-child) {
-  margin-right: 30px;
 }
 
 .section-title {
@@ -385,19 +383,16 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-color);
 }
 
 .team-professions {
-  /* padding-bottom: 90px; */
   margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
@@ -422,15 +417,14 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.team-link:hover, .team-link:focus {
+  background: var(--accent-color);
+}
+
 .team-icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
-}
-
-.team-link:hover,
-.team-link:focus {
-  background: var(--accent-color);
 }
 
 .team-link:focus .team-icon,
@@ -465,14 +459,8 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.regular-customers-link:hover,
-.regular-customers-link:focus {
+.regular-customers-link:hover, .regular-customers-link:focus {
   border-color: var(--accent-color);
-}
-
-.regular-customers-link:hover .regular-customers-icon,
-.regular-customers-link:focus .regular-customers-icon {
-  fill: var(--accent-color);
 }
 
 .regular-customers-icon {
@@ -482,6 +470,11 @@ img {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.regular-customers-link:hover .regular-customers-icon,
+.regular-customers-link:focus .regular-customers-icon {
+  fill: var(--accent-color);
 }
 
 footer {
@@ -519,7 +512,6 @@ footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
   letter-spacing: 0.03em;
   color: #ffffff;
 }
@@ -531,7 +523,6 @@ footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -568,8 +559,7 @@ footer {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link:hover,
-.footer-link:focus {
+.footer-link:hover, .footer-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -632,8 +622,7 @@ footer {
   color: #FFFFFF;
 }
 
-.footer-subscription-btn:focus,
-.footer-subscription-btn:hover {
+.footer-subscription-btn:focus, .footer-subscription-btn:hover {
   background-color: #188CE8;
 }
 
@@ -776,9 +765,21 @@ footer {
 }
 
 .modal-form-checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+}
+
+.modal-form-checkbox-label::before {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  margin-right: 7px;
 }
 
 .modal-form-checkbox:checked + .modal-form-checkbox-label::before {
@@ -793,21 +794,6 @@ footer {
 .modal-form-checkbox:focus + .modal-form-checkbox-label::before {
   outline: none;
   border: 1px solid var(--accent-color);
-}
-
-.modal-form-checkbox-label::before {
-  display: block;
-  content: "";
-  width: 16px;
-  height: 15px;
-  border: 2px solid #212121;
-  margin-right: 7px;
-}
-
-.modal-form-checkbox-label {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
 }
 
 .modal-form-label-link {
@@ -837,8 +823,7 @@ footer {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-btn:focus,
-.modal-form-btn:hover {
+.modal-form-btn:focus, .modal-form-btn:hover {
   background-color: #188CE8;
 }
 
@@ -874,8 +859,7 @@ footer {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.work-menu-btn-text:hover,
-.work-menu-btn-text:focus {
+.work-menu-btn-text:hover, .work-menu-btn-text:focus {
   color: #ffffff;
   background: var(--accent-color);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -903,11 +887,6 @@ footer {
   text-decoration: none;
 }
 
-.client-link:hover .overlay,
-.client-link:focus .overlay {
-  transform: translateY(0%);
-}
-
 .client-img-overlay {
   position: relative;
   overflow: hidden;
@@ -933,6 +912,11 @@ footer {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-link:hover .overlay,
+.client-link:focus .overlay {
+  transform: translateY(0%);
 }
 
 .client-info {

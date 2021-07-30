@@ -1,6 +1,5 @@
 .team {
-  
-  margin: 0 auto;
+   margin: 0 auto;
 
   background-color: #f5f4fa;
 }
@@ -37,19 +36,19 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  /* identical to box height */
+  
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-color);
 }
 
 .team-professions {
-  /* padding-bottom: 90px; */
+  
   margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  /* identical to box height */
+ 
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--text-color);
@@ -71,17 +70,20 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+          background: var(--accent-color);
+        }
 }
 .team-icon {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+
+       .team-link:focus &,
+       .team-link:hover & {
+          fill: white;
+        }     
 }
-.team-link:hover,
-.team-link:focus {
-  background: var(--accent-color);
-}
-.team-link:focus .team-icon,
-.team-link:hover .team-icon {
-  fill: white;
-}
+

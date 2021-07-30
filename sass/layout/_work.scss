@@ -10,11 +10,13 @@
 }
 .work-menu-btn {
   display: block;
+
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
 }
 
-.work-menu-btn:not(:last-child) {
-  margin-right: 8px;
-}
+
 
 .work-menu-btn-text {
   padding: 6px 22px;
@@ -30,10 +32,11 @@
   transition-property: color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.work-menu-btn-text:hover,
-.work-menu-btn-text:focus {
-  color: #ffffff;
-  background: var(--accent-color);
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+         &:hover,
+         &:focus {
+            color: #ffffff;
+            background: var(--accent-color);
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+         }
 }

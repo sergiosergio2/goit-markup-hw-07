@@ -4,33 +4,33 @@
 }
 .modal-form-head {
   
-font-weight: 700;
-font-size: 20px;
-line-height: 1.15;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
 
 
-color: #212121;
-margin-bottom: 12px;
+  color: #212121;
+  margin-bottom: 12px;
 }
 .modal-form-field {
  
-font-weight: 400;
-font-size: 12px;
-line-height: 1.17;
-color: #757575;
-margin-bottom: 10px;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 1.17;
+   color: #757575;
+   margin-bottom: 10px;
 }
 .modal-form-label {
   display: block;
   margin-bottom: 4px;
 
 
-font-weight: 400;
-font-size: 12px;
-line-height: 1.17;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
 
 
-color: #757575;
+  color: #757575;
 
 }
 .modal-form-wrapper {
@@ -52,11 +52,15 @@ color: #757575;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   
+
+    &:focus {
+     outline: none;
+     border-color: var(--accent-color);
+    }
+
 }
-.modal-form-input:focus {
-  outline: none;
-  border-color: var(--accent-color);
-}
+
+
 .modal-form-icon {
   position: absolute;
   top: 11px;
@@ -67,10 +71,12 @@ color: #757575;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal-form-input:focus + & {
+    fill: var(--accent-color);
+   }
 }
-.modal-form-input:focus + .modal-form-icon {
-  fill: var(--accent-color);
-}
+
 .modal-form-message {
   width: 100%;
   margin-top: 4px;
@@ -84,50 +90,51 @@ color: #757575;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+     &:focus {
+      outline: none;
+      border-color: var(--accent-color);
+     }
+
 }
-.modal-form-message:focus {
-  outline: none;
-  border-color: var(--accent-color);
-}
+
+
 .modal-form-checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
   
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 
-}
-.modal-form-checkbox:checked + .modal-form-checkbox-label::before {
+      &::before {
+        display: block;
+        content: "";
+        width: 16px;
+        height: 15px;
+        border: 2px solid #212121;
+        margin-right: 7px;
+   
+      }
+      .modal-form-checkbox:checked + &::before {
  
-  background-image: url(../../images/fon-images/icon-check1.png);
-  border-color: var(--accent-color);
-   background-position: 50% 50%;
-   transition-property: background-image;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+         background-image: url(../../images/fon-images/icon-check1.png);
+         border-color: var(--accent-color);
+          background-position: 50% 50%;
+          transition-property: background-image;
+         transition-duration: 250ms;
+         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  
-}
-.modal-form-checkbox:focus + .modal-form-checkbox-label::before {
-  outline: none;
-  border: 1px solid var(--accent-color);
+      }
+      .modal-form-checkbox:focus + &::before {
+         outline: none;
+         border: 1px solid var(--accent-color);
+
+      }
 
 }
-.modal-form-checkbox-label::before {
-  display: block;
- 
-  content: "";
-  width: 16px;
-  height: 15px;
-  border: 2px solid #212121;
-  margin-right: 7px;
-  
 
-  
-}
-.modal-form-checkbox-label {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-}
+
 .modal-form-label-link  {
   color: #2196F3;
 }
@@ -140,24 +147,22 @@ line-height: 1.71;
   height: 50px;
   border: none;
   border-radius: 4px;
-padding: 10px 55px 10px 56px;
-background-color:#2196F3;
-box-shadow: 0px 4px rgba(0, 0, 0, 0.15);
-font-weight: 700;
+  padding: 10px 55px 10px 56px;
+  background-color:#2196F3;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.15);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-content: center;
 
-font-size: 16px;
-line-height: 1.88;
-
-align-content: center;
-
-
-color: #FFFFFF;
-cursor: pointer;
-transition-property: background-color;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-form-btn:focus ,
-.modal-form-btn:hover {
-  background-color: #188CE8;
+
+     &:focus ,
+     &:hover {
+        background-color: #188CE8;
+     }
 }

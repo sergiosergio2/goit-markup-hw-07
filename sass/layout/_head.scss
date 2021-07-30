@@ -54,28 +54,32 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.menu-link-activ::after {
-  position: absolute;
-  left: 0;
-  bottom: 0;
 
-  display: block;
-  content: "";
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  margin: 0 auto;
+     &:hover,
+     &:focus {
+       color: var(--accent-color);
+     }
 }
+
 
 .menu-link-activ {
   color: var(--accent-color);
+
+     &::after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        display: block;
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-color: var(--accent-color);
+        margin: 0 auto;
+      }
 }
 
-.menu-link:hover,
-.menu-link:focus {
-  color: var(--accent-color);
-}
+
 .contakt {
   display: flex;
   align-items: center;
@@ -100,24 +104,30 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+     .tel-link:hover &,
+     .tel-link:focus & {
+       fill: var(--accent-color);
+     }
+
+      .mailto-link:hover &,
+      .mailto-link:focus & {
+         fill: var(--accent-color);
+      }
+
 }
+
 .tel-link:hover,
 .tel-link:focus {
   color: var(--accent-color);
 }
 
-.tel-link:hover .contakt-item-icon,
-.tel-link:focus .contakt-item-icon {
-  fill: var(--accent-color);
-}
+
 .mailto-link:hover,
 .mailto-link:focus {
   color: var(--accent-color);
 }
-.mailto-link:hover .contakt-item-icon,
-.mailto-link:focus .contakt-item-icon {
-  fill: var(--accent-color);
-}
+
 
 .contakt .contakt-item + .contakt-item {
   margin-left: 50px;

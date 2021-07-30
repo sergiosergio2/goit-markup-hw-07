@@ -13,11 +13,13 @@
   justify-items: baseline;
   justify-content: space-between;
   position: relative;
+
+     &:not(:last-child) {
+       margin-right: 30px;
+     }
 }
 
-.skills-list:not(:last-child) {
-  margin-right: 30px;
-}
+
 .skills-overlay {
   position: absolute;
   bottom: 0;

@@ -23,15 +23,14 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+         border-color: var(--accent-color);
+      }
 }
-.regular-customers-link:hover,
-.regular-customers-link:focus {
-  border-color: var(--accent-color);
-}
-.regular-customers-link:hover .regular-customers-icon,
-.regular-customers-link:focus .regular-customers-icon {
-  fill: var(--accent-color);
-}
+
+
 
 .regular-customers-icon {
   width: 106px;
@@ -40,4 +39,9 @@
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      .regular-customers-link:hover &,
+      .regular-customers-link:focus & {
+         fill: var(--accent-color);
+      }
 }
