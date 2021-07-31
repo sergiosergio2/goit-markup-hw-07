@@ -111,7 +111,7 @@ img {
   margin-left: 50px;
 }
 
-.navigation__link {
+.navigation__menu-link {
   position: relative;
   display: block;
   padding: 32px 0;
@@ -125,15 +125,15 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.navigation__link:hover, .navigation__link:focus {
+.navigation__menu-link:hover, .navigation__menu-link:focus {
   color: var(--accent-color);
 }
 
-.navigation__link_activ {
+.navigation__menu-link_activ {
   color: var(--accent-color);
 }
 
-.navigation__link_activ::after {
+.navigation__menu-link_activ::after {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -151,7 +151,21 @@ img {
   margin-left: auto;
 }
 
-.contact__tel,
+.contact__tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact__tel:hover, .contact__tel:focus {
+  color: var(--accent-color);
+}
+
 .contact__mailto {
   font-weight: 500;
   font-size: 14px;
@@ -163,7 +177,11 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contakt-item-icon {
+.contact__mailto:hover, .contact__mailto:focus {
+  color: var(--accent-color);
+}
+
+.contakt__icon {
   margin-right: 10px;
   fill: var(--text-color);
   transition-property: fill;
@@ -171,24 +189,14 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contakt__tel:hover .contakt-item-icon,
-.contact__tel:focus .contakt-item-icon {
+.contakt__tel:hover .contakt__icon,
+.contact__tel:focus .contakt__icon {
   fill: var(--accent-color);
 }
 
-.contact__mailto:hover .contakt-item-icon,
-.contact__mailto:focus .contakt-item-icon {
+.contact__mailto:hover .contakt__icon,
+.contact__mailto:focus .contakt__icon {
   fill: var(--accent-color);
-}
-
-.tel-link:hover,
-.tel-link:focus {
-  color: var(--accent-color);
-}
-
-.mailto-link:hover,
-.mailto-link:focus {
-  color: var(--accent-color);
 }
 
 .contakt__item:not(:first-child) {
