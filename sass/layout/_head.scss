@@ -84,12 +84,13 @@
 }
 
 
-.contakt {
+.contact {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 .contact__tel {
+  
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -106,6 +107,7 @@
 
 }
 .contact__mailto {
+ 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -123,26 +125,22 @@
 
 }
 
-.contakt__icon {
+.contact__icon {
   margin-right: 10px;
   fill: var(--text-color);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-     .contakt__tel:hover &,
-     .contact__tel:focus & {
-       fill: var(--accent-color);
-     }
-
-      .contact__mailto:hover &,
-      .contact__mailto:focus & {
-         fill: var(--accent-color);
-      }
-
+ 
 }
+ .contact__tel:hover .contact__icon,
+ .contact__tel:focus .contact__icon,
+ .contact__mailto:hover .contact__icon,
+ .contact__mailto:focus .contact__icon {
+         fill: var(--accent-color);
+  }
 
-
-.contakt__item:not(:first-child) {
+.contact__item:not(:first-child) {
   margin-left: 50px;
 }

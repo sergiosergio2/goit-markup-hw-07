@@ -145,7 +145,7 @@ img {
   margin: 0 auto;
 }
 
-.contakt {
+.contact {
   display: flex;
   align-items: center;
   margin-left: auto;
@@ -181,7 +181,7 @@ img {
   color: var(--accent-color);
 }
 
-.contakt__icon {
+.contact__icon {
   margin-right: 10px;
   fill: var(--text-color);
   transition-property: fill;
@@ -189,17 +189,14 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contakt__tel:hover .contakt__icon,
-.contact__tel:focus .contakt__icon {
+.contact__tel:hover .contact__icon,
+.contact__tel:focus .contact__icon,
+.contact__mailto:hover .contact__icon,
+.contact__mailto:focus .contact__icon {
   fill: var(--accent-color);
 }
 
-.contact__mailto:hover .contakt__icon,
-.contact__mailto:focus .contakt__icon {
-  fill: var(--accent-color);
-}
-
-.contakt__item:not(:first-child) {
+.contact__item:not(:first-child) {
   margin-left: 50px;
 }
 
