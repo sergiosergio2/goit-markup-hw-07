@@ -83,10 +83,13 @@ img {
 
 .navigation {
   display: flex;
+}
+
+.head__navigation {
   margin-left: 93px;
 }
 
-.logo-link {
+.logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -95,7 +98,7 @@ img {
   color: var(--accent-color);
 }
 
-.logo-studio {
+.head__studio {
   color: #000000;
 }
 
@@ -104,11 +107,11 @@ img {
   align-items: center;
 }
 
-.menu .menu-item + .menu-item {
+.navigation__item:not(:first-child) {
   margin-left: 50px;
 }
 
-.menu-link {
+.navigation__link {
   position: relative;
   display: block;
   padding: 32px 0;
@@ -122,15 +125,15 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-link:hover, .menu-link:focus {
+.navigation__link:hover, .navigation__link:focus {
   color: var(--accent-color);
 }
 
-.menu-link-activ {
+.navigation__link_activ {
   color: var(--accent-color);
 }
 
-.menu-link-activ::after {
+.navigation__link_activ::after {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -148,8 +151,8 @@ img {
   margin-left: auto;
 }
 
-.tel-link,
-.mailto-link {
+.contact__tel,
+.contact__mailto {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -168,13 +171,13 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.tel-link:hover .contakt-item-icon,
-.tel-link:focus .contakt-item-icon {
+.contakt__tel:hover .contakt-item-icon,
+.contact__tel:focus .contakt-item-icon {
   fill: var(--accent-color);
 }
 
-.mailto-link:hover .contakt-item-icon,
-.mailto-link:focus .contakt-item-icon {
+.contact__mailto:hover .contakt-item-icon,
+.contact__mailto:focus .contakt-item-icon {
   fill: var(--accent-color);
 }
 
@@ -188,7 +191,7 @@ img {
   color: var(--accent-color);
 }
 
-.contakt .contakt-item + .contakt-item {
+.contakt__item:not(:first-child) {
   margin-left: 50px;
 }
 
