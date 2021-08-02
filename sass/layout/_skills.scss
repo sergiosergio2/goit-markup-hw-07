@@ -4,11 +4,11 @@
   padding-bottom: 94px;
 }
 
-.skills-title {
+.skills__title {
   margin-bottom: 50px;
  
 }
-.skills-list {
+.skills__list {
   display: flex;
   justify-items: baseline;
   justify-content: space-between;
@@ -20,9 +20,8 @@
 }
 
 
-.skills-overlay {
-  position: absolute;
-  bottom: 0;
+.skills__overlay {
+
 
   width: 370px;
   height: 70px;
@@ -38,4 +37,8 @@
   text-transform: uppercase;
   color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
+}
+.skills__overlay_position {
+   position: absolute;
+   bottom: 0;
 }

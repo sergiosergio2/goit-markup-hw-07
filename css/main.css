@@ -322,22 +322,22 @@ img {
   padding-bottom: 94px;
 }
 
-.skills-title {
+.skills__title {
   margin-bottom: 50px;
 }
 
-.skills-list {
+.skills__list {
   display: flex;
   justify-items: baseline;
   justify-content: space-between;
   position: relative;
 }
 
-.skills-list:not(:last-child) {
+.skills__list:not(:last-child) {
   margin-right: 30px;
 }
 
-.skills-overlay {
+.skills__overlay {
   position: absolute;
   bottom: 0;
   width: 370px;
