@@ -201,7 +201,7 @@ img {
 }
 
 .hero {
-  width: 1600px;
+  max-width: 1600px;
   margin: 0px auto;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -322,27 +322,24 @@ img {
   padding-bottom: 94px;
 }
 
-.skills__title {
+.skills-title {
   margin-bottom: 50px;
 }
 
-.skills__list {
+.skills-list {
   display: flex;
   justify-items: baseline;
   justify-content: space-between;
   position: relative;
 }
 
-.skills__list:not(:last-child) {
+.skills-list:not(:last-child) {
   margin-right: 30px;
 }
 
-.skills__overlay {
+.skills-overlay {
   position: absolute;
   bottom: 0;
-  
-}
-.sk-overlay {
   width: 370px;
   height: 70px;
   padding: 27px 0;
