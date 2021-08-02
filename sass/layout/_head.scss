@@ -144,3 +144,21 @@
 .contact__item:not(:first-child) {
   margin-left: 50px;
 }
+
+//       ВОТ такая конструкция не работает.//
+// .contact__icon {
+//   margin-right: 10px;
+//   fill: var(--text-color);
+//   transition-property: fill;
+//   transition-duration: 250ms;
+//   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//     .contact__tel:hover &,
+//     .contact__tel:focus & {
+//       fill: var(--accent-color);
+//     }
+//      .contact__mailto:hover &,
+//      .contact__mailto:focus & {
+//          fill: var(--accent-color);
+//       }
+// }

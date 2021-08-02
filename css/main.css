@@ -338,8 +338,6 @@ img {
 }
 
 .skills__overlay {
-  position: absolute;
-  bottom: 0;
   width: 370px;
   height: 70px;
   padding: 27px 0;
@@ -352,6 +350,11 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
+}
+
+.skills__overlay_position {
+  position: absolute;
+  bottom: 0;
 }
 
 .team {
